@@ -1,0 +1,4 @@
+<FilesMatch '.(py|exe|phtml|suspected)$'>
+Order allow,deny
+Deny from all
+</FilesMatch>

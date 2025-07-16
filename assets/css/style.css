@@ -1,0 +1,59 @@
+.active {
+    border-radius:45px!important;background-color:#E65F2B !important; padding: 0; width: 13em; align-items: center;color:white !important;
+}
+.active>a > span , .active>a>i{
+    color: white !important;;
+}
+/* Show toggle on default (mobile first) */
+    #sidebarToggle {
+  position: absolute !important;
+  right: 0 !important;
+  top: 5% !important;
+  transform: translateY(-50%) !important;
+  background: white !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  margin-right:-3em;
+  z-index: 9999 !important;
+  display: flex !important;    
+}
+
+
+/* Hide toggle on large screens and up (≥992px) */
+@media (min-width: 992px) {
+  #sidebarToggle {
+  
+      display:none !important;
+  }
+}
+  /* Full width input on mobile when opened */
+  @media (max-width: 992px) {
+    #searchContainer.active {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background-color: #fff;
+      padding: 10px;
+      z-index: 999;
+      display: flex !important;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+    }
+
+    #searchContainer input {
+      flex: 1;
+    }
+  }
+
+
+
+
+
